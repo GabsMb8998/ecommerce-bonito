@@ -9,7 +9,7 @@ import "../index.css"
         
 export function Footer(){
     return(
-        <footer className="bg-[#050505] w-full h-96 flex justify-center md:gap-24 gap-14 xl:grid xl:grid-cols-3 xl:px-32 px-10 items-center">
+        <footer className="bg-[#050505] w-full h-96 flex justify-center md:gap-24 gap-14 xl:grid xl:grid-cols-3 xl:px-32 px-10 items-center mt-28">
 
             <div className="text-white flex justify-center font-logo lg:text-5xl text-2xl">KeyNote</div>
 

@@ -8,9 +8,9 @@ import iconCart from '../imgs/icon-cart.svg'
 import iconSearch from '../imgs/icon-search.svg'
 import menu from "../imgs/menu.svg"
 import { MenuHamburguer } from "./mobile/MenuHamburguer"
-export function Header({}){
+export function Header({selected}){
 
-    const [NavSelected, setNavSelected] = useState('home')
+    // const [NavSelected, setNavSelected] = useState('home')
     const navigate = useNavigate() 
     const [open, setOpen] = useState(false)
 
@@ -33,10 +33,10 @@ export function Header({}){
                         KN
                     </div>
                     
-                    <nav className={`2xl:gap-x-16 xl:gap-x-9 hidden xl:flex`}>
-                        <NavHeader label='home' selected={NavSelected === 'home'}/>
-                        <NavHeader label='catalogo' selected={NavSelected === 'catalogo'}/>
-                        <NavHeader label='sobre nós' selected={NavSelected === 'sebre nós'}/>
+                    <nav className={`2xl:gap-x-16 xl:gap-x-9 hidden xl:flex`} >
+                        <NavHeader label='home' selected={selected === 'home'} destino=''/>
+                        <NavHeader label='catalogo' selected={selected === 'catalogo'}  destino='catalogo' />
+                        <NavHeader label='sobre nós' selected={selected === 'sobre nós'}  destino=''/>
                     </nav>
                 </div>
 

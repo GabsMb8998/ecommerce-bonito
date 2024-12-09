@@ -10,7 +10,8 @@ export function MenuHamburguer({open, setOpen}){
     return(
 
         <>
-            <aside className={`${open ? 'block' : '-z-10 opacity-0'} ${open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-100%]'} h-full w-48 bg-fundo fixed top-0 z-20  transform transition-all duration-300 ease-in-out sm:hidden p-5` }>
+            <aside className={`${open ? 'block' : '-z-10 opacity-0'} ${open ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-100%]'} 
+            h-full w-56 bg-fundo fixed top-0 z-20  transform transition-all duration-300 ease-in-out sm:hidden p-5` }>
                 
                 {/* botao fechar */}
                 <div className="absolute -right-2 top-7" onClick={()=>{setOpen(!open)}}>
@@ -27,11 +28,11 @@ export function MenuHamburguer({open, setOpen}){
                         <h4 className="text-xl font-semibold">navegação</h4>
 
                         <div className="flex flex-col my-3 gap-y-1">
-                            <ItemMenuMobile label={'home'} destination={''}/>
-                            <ItemMenuMobile label={'catalogo'} destination={'catalogo'}/>
-                            <ItemMenuMobile label={'carrinho'} destination={'cart'}/>
-                            <ItemMenuMobile label={'contato'} destination={''}/>
-                            <ItemMenuMobile label={'sobre nós'} destination={''}/>
+                            <ItemMenuMobile label={'home'} destination={''} setOpen={setOpen}/>
+                            <ItemMenuMobile label={'catalogo'} destination={'catalogo'} setOpen={setOpen}/>
+                            <ItemMenuMobile label={'carrinho'} destination={'cart'} setOpen={setOpen}/>
+                            <ItemMenuMobile label={'contato'} destination={''} setOpen={setOpen}/>
+                            <ItemMenuMobile label={'sobre nós'} destination={''} setOpen={setOpen}/>
                         </div>
                     </div>
 

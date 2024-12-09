@@ -1,14 +1,12 @@
 import { Aside } from "../components/catalogo/Aside";
 import { Header } from "../components/Header";
 import { Produto } from "../components/Produto";
-import { ButtonProduto } from "../components/produto/ButtonProduto";
-import { SubTitulo } from "../components/Subitulo";
 import { useEffect, useState } from "react";
 import { ItemFiltro } from "../components/catalogo/ItemFiltro";
 
 import produto from "../imgs/produto.svg"
 import iconFechar from "../imgs/icon-fechar.svg"
-import { MenuHamburguer } from "../components/mobile/MenuHamburguer";
+import {Footer} from "../components/Footer"
 
 export function Catalogo(){
 
@@ -36,7 +34,7 @@ export function Catalogo(){
 
     return(
         <div className="">
-            <Header/>
+            <Header selected='catalogo'/>
 
             <main className= {`${filtroSelected && 'overflow-hidden'} flex md:ml-20 lg:mx-10 md:gap-x-10 lg:gap-x-20 md:my-28`}>
                 <Aside/>
@@ -106,6 +104,8 @@ export function Catalogo(){
                     </div>
                 </div>
             </main>
+
+            <Footer/>
         </div>
     )
 }

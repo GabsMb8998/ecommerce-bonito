@@ -17,6 +17,10 @@ body {
     font-family: 'Forum';
 }
 
+.hover-effect:hover svg {
+    fill: #F6F5F5;
+}
+
 .shadow-barra-pesquisa {
     -webkit-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.06);
     -moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.06);

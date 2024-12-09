@@ -8,6 +8,7 @@ import iconBack from "../imgs/icon-arrow-back.svg"
 import iconFavoritos from "../imgs/icon-favoritos.svg"
 import { Header } from "../components/Header"
 import { SessaoProdutos } from "../components/SessaoProdutos"
+import { Footer } from "../components/Footer"
 
 export function Produto(){
 
@@ -38,12 +39,14 @@ export function Produto(){
 
                     <div className="flex flex-col gap-y-5">
                         <div>
-                            <SubTitulo titulo={'Piano Yamaha sei la '}/>
+                            <SubTitulo titulo={'Piano Yamaha'}/>
                         </div>
 
                         <div>
                             <p className="text-lg text-[#707070] font-semibold">Descrição</p>
-                            <p className="text-[#7D7D7D] font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut molestias illum nobis necessitatibus. Obcaecati corporis perferendis consectetur impedit fugiat itaque, corrupti autem! Voluptatum laudantium ipsam consequatur in explicabo, accusamus quod. </p>
+                            <p className="text-[#7D7D7D] font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Ut molestias illum nobis necessitatibus. Obcaecati corporis perferendis consectetur impedit fugiat itaque, corrupti autem!
+                            Voluptatum laudantium ipsam consequatur in explicabo, accusamus quod. </p>
                         </div>
                     </div>
 
@@ -105,6 +108,8 @@ export function Produto(){
 
                     <SessaoProdutos/>
                 </main>
+
+                <Footer/>
             </div>
         </div>
 

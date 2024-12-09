@@ -1,13 +1,18 @@
 import { Header } from "../components/Header";
 import { MarcaMobile } from "../components/mobile/MarcaMobile";
-import { IconMarca1 } from "../components/icons/iconMarca1"; 
 import { Marca } from "../components/home/Marca";
 import { SubTitulo } from "../components/Subitulo";
 
 import { Carousel } from 'primereact/carousel';
-
-
 import "../index.css"
+
+import { IconMarca1 } from "../components/icons/iconMarca1"; 
+import {IconYamaha} from "../components/icons/IconYamaha"
+import { IconBechstein } from "../components/icons/IconBechstein";
+import { IconMoog } from "../components/icons/IconMoog";
+import { IconRoland } from "../components/icons/IconRoland";
+import { IconSamick } from "../components/icons/IconSamick";
+import { IconSchimmel } from "../components/icons/IconSchimmel";
 
 // imgs 
 import produto from "../imgs/produto.svg"
@@ -23,7 +28,7 @@ export function Home(){
 
     return(
         <>
-            <Header/>
+            <Header selected='home'/>
 
             <main className="">
                 {/* marcas */}
@@ -37,28 +42,32 @@ export function Home(){
                         <MarcaMobile label={'Roland'} IconComponent={()=><IconMarca1 fill={'icon'} width={'35px'} height={'35px'}/>}/>
 
                         {/* desktop */}
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
-                        </div>
-             
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
-                        </div>
-             
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
-                        </div>
-             
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
-                        </div>
-             
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
-                        </div>
-             
-                        <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 ">
-                            <Marca  label={'Steinway & Sons'} IconComponent={()=><IconMarca1 fill={'icon'} width={'40px'} height={'40px'}/>} />
+
+                        <div className=" xl:grid-cols-6 xl:gap-x-8 grid-cols-3 gap-10 hiddem sm:grid">
+
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0 hover-effect ">
+                                <Marca  label={'Yamaha'} IconComponent={()=><IconYamaha fill={'icon'} width={'40px'} height={'40px'}/>} />
+                            </div>
+                
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0 hover-effect ">
+                                <Marca  label={'Bechstein'} IconComponent={()=><IconBechstein fill={'icon'} width={'40px'} height={'40px'}/>} />
+                            </div>
+                
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0  hover-effect">
+                                <Marca  label={'Moog'} IconComponent={()=><IconMoog  fill={'icon'} width={'70px'} height={'40px'}/>} />
+                            </div>
+                
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0 hover-effect ">
+                                <Marca  label={'Roland'} IconComponent={()=><IconRoland fill={'icon'} width={'40px'} height={'40px'}/>} />
+                            </div>
+                
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0 hover-effect ">
+                                <Marca  label={'Samick'} IconComponent={()=><IconSamick fill={'icon'} width={'40px'} height={'40px'}/>} />
+                            </div>
+                
+                            <div className="sm:flex hidden justify-center flex-1 basis-1/2 sm:basis-1/3 md:basis-1/4 xl:basis-0 hover-effect ">
+                                <Marca  label={'Schimmel'} IconComponent={()=><IconSchimmel fill={'icon'} width={'40px'} height={'40px'}/>} />
+                            </div>
                         </div>
                     </div>
                 </section>
