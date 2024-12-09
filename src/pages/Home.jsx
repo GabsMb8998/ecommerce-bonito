@@ -17,6 +17,7 @@ import banner23 from "../imgs/banner2-3.svg"
 import { ItemBanner2 } from "../components/home/ItemBanner2";
 import { CarrouselBanner2 } from "../components/home/CarrouseBanner2";
 import { SessaoProdutos } from "../components/SessaoProdutos";
+import { Footer } from "../components/Footer";
 
 export function Home(){
 
@@ -80,6 +81,8 @@ export function Home(){
                   <SessaoProdutos produto={produto} titulo='Populares' />
 
             </main>
+
+            <Footer/>
         </>
     )
 }

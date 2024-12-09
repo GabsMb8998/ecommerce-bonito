@@ -12,8 +12,7 @@ export function Header({}){
 
     const [NavSelected, setNavSelected] = useState('home')
     const navigate = useNavigate() 
-    const [open, setOpen] = useState(true)
-
+    const [open, setOpen] = useState(false)
 
     return(
 

@@ -5,7 +5,7 @@ export function ItemMenuMobile({label, destination}){
 
     return(
         <a 
-        className="text-[#8B8B8B] text-lg"
-        onClick={navigate(`/${destination}`)}>{label}</a>
+        className="text-[#8B8B8B] text-md"
+        onClick={()=>navigate(`/${destination}`)}>{label}</a>
     )
 }
