@@ -23,6 +23,7 @@ import { ItemBanner2 } from "../components/home/ItemBanner2";
 import { CarrouselBanner2 } from "../components/home/CarrouseBanner2";
 import { SessaoProdutos } from "../components/SessaoProdutos";
 import { Footer } from "../components/Footer";
+import {Banner1} from "../components/Banner1"
 
 export function Home(){
 
@@ -31,6 +32,9 @@ export function Home(){
             <Header selected='home'/>
 
             <main className="">
+
+                <Banner1/>
+
                 {/* marcas */}
                 <section className="mx-10 sm:mx-16">
                     <SubTitulo titulo='Principais marcas'/>
@@ -77,7 +81,7 @@ export function Home(){
 
                 {/* banner 2 */}
 
-                <section className="my-5 !mx-0">
+                <section className="lg:my-48 !mx-0">
                     <div className=" gap-x-10 justify-center hidden lg:flex">
                         <ItemBanner2 label='estudos' img={banner21}/>
                         <ItemBanner2 label='shows' img={banner22}/>
