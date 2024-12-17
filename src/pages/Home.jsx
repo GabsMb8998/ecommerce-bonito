@@ -24,6 +24,8 @@ import { CarrouselBanner2 } from "../components/home/CarrouseBanner2";
 import { SessaoProdutos } from "../components/SessaoProdutos";
 import { Footer } from "../components/Footer";
 import {Banner1} from "../components/Banner1"
+import { Contato } from "../components/Contato";
+import { ContatoMobile } from "../components/mobile/ContatoMobile";
 
 export function Home(){
 
@@ -92,6 +94,9 @@ export function Home(){
 
                   {/* Populares */}
                   <SessaoProdutos produto={produto} titulo='Populares' />
+
+                  <Contato/>
+                  <ContatoMobile/>
 
             </main>
 
